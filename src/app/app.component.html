@@ -1,4 +1,16 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">The range date</label>
+					<input type="text" name="daterange" ngxDaterangepickerMd [(ngModel)]="selected" class="form-control" />
+          <a href="#" class="btn btn-primary ngx-daterangepicker-action" (click)="open($event)">Open Picker</a>
+				</div>
+
+			</form>
+
+      <p ngxDaterangepickerMd-DR >Date Picker Directive</p>
+		</div>
+	</div>
+</div>
